@@ -14,11 +14,13 @@ function MovieList() {
 
     return (
         <main>
-            <h1>MovieList</h1>
+            <section className = "add-movie">
+                <Link to='/add'><button id="btn-add-movie">Add a movie!</button></Link>
+            </section>
             <section className="movies">
                 {movies.map(movie => {
                     return (
-                        <div key={movie.id} >
+                        <div id="movie" key={movie.id} >
                             <h3>{movie.title}</h3>
                             {/* <Link to="/details"> */}
                             <Link to='/details'>

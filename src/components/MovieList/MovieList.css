@@ -1,4 +1,15 @@
 .movies {
-    display : flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+}
+#btn-add-movie {
+  font-size: 20px;
+}
+#movie {
+  padding: 10px;
+}
+#btn-add-movie {
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 10px;
 }

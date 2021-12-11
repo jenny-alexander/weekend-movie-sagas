@@ -11,17 +11,16 @@ function MovieDetails(props) {
 
     return (
         <main>
-            <h1>MovieDetails</h1>
             <section className="movie-details">
                 <ul>
-                    <li>Title: {movieDetails.title}</li>
-                    <img src={movieDetails.poster} alt={movieDetails.title}></img>
-                    <li>Description: {movieDetails.description}</li>
+                    <li id="title">{movieDetails.title}</li>
+                    <img id="image" src={movieDetails.poster} alt={movieDetails.title}></img>
+                    <li id="desc">{movieDetails.description}</li>
                 </ul>
             </section>
             <br></br>
             <Link to='/'>
-                <button>Back to Movie List</button>
+                <button id="back-btn">Back to Movie List</button>
             </Link>
         </main>
 
