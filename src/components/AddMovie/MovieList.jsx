@@ -11,10 +11,6 @@ function MovieList() {
         dispatch({ type: 'FETCH_MOVIES' });
     }, []);
 
-    const showDetails=()=>{
-        console.log(`I want to see deets!`);
-    }
-
     return (
         <main>
             <h1>MovieList</h1>
@@ -23,7 +19,7 @@ function MovieList() {
                     return (
                         <div key={movie.id} >
                             <h3>{movie.title}</h3>
-                            <img src={movie.poster} alt={movie.title} onClick={showDetails}/>
+                            <img src={movie.poster} alt={movie.title}/>
                         </div>
                     );
                 })}
