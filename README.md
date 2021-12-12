@@ -70,12 +70,7 @@ In order to get the movie gallery application up and running, do the following:
 - Express
 - Postgresql
 
-## Acknowledgement
-
-- Thanks to our fearless instructor, Dev Jana! His easy-going nature and patience are truly what make him a great teacher.
-- Thanks to [Prime Digital Academy](www.primeacademy.io) for providing all Prime students with the opportunity to make substantial changes in their lives by learning how to program and how to think like a programmer.
-
-## Support
+## Support & Acknowledgement
 
 - Thank you to my fellow Ionian/Nighstack cohort members for interesting conversations about how to make our projects work. They all offer interesting thoughts, ideas and approaches. Thanks to Dev Jana, our Prime instructor!
 
