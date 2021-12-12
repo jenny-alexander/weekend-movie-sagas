@@ -15,14 +15,13 @@ function MovieList() {
     return (
         <main>
             <section className = "add-movie">
-                <Link to='/add'><button id="btn-add-movie">Add a movie!</button></Link>
+                <Link to='/add'><button id="btn-add-movie">Add a movie</button></Link>
             </section>
             <section className="movies">
                 {movies.map(movie => {
                     return (
                         <div id="movie" key={movie.id} >
                             <h3>{movie.title}</h3>
-                            {/* <Link to="/details"> */}
                             <Link to='/details'>
                                 <img src={movie.poster} alt={movie.title} 
                                      onClick={ ()=>dispatch( {type: 'FETCH_MOVIE_DETAILS', payload: movie } )}/>

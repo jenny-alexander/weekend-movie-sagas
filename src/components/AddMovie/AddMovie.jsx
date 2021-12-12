@@ -4,12 +4,6 @@ import { Link } from 'react-router-dom';
 import './AddMovie.css'
 
 function AddMovie() {
-    // const [ newMovie, setNewMovie]=useState ( {
-    //     title: 'The Birds',
-    //     poster: 'https://upload.wikimedia.org/wikipedia/commons/c/c0/The_Birds_original_poster.jpg',
-    //     description: 'Could have been the terrifying motion picture I have ever made - Hitchcok',
-    //     genre_id: ''
-    // } );
     const [ newMovie, setNewMovie]=useState ( {} );
     const dispatch = useDispatch();
 
@@ -34,7 +28,7 @@ function AddMovie() {
                                 <label for="title">Title:</label>
                             </div>
                             <div className="col-85">
-                                <input type="text" id="title" name="title" value={newMovie.title}
+                                <input type="text" id="title" name="title" maxlength="120" value={newMovie.title}
                                        onChange={(e)=>setNewMovie({...newMovie, title: e.target.value })} required/>
                             </div>
                         </div>
@@ -43,7 +37,7 @@ function AddMovie() {
                                 <label for="poster">Poster:</label>
                             </div>
                             <div className="col-85">
-                                <input type="text" id="poster" name="poster" value={newMovie.poster}
+                                <input type="text" id="poster" name="poster" maxlength="500" value={newMovie.poster}
                                        onChange={(e)=>setNewMovie( {...newMovie, poster: e.target.value })} required/>
                             </div>
                         </div>
@@ -61,7 +55,6 @@ function AddMovie() {
                                 <label for="genre_id">Genre</label>
                             </div>
                             <div className="col-85">
-                                {/* <select id="genre" name="genre" onChange={(e)=>setNewMovie({...newMovie, genre_id: e.target.value})}> */}
                                 <select id="genre" name="genre" onChange={(e)=>handleGenreChange(e)}>
                                     { 
                                         genres.map( genres =>{
@@ -78,6 +71,7 @@ function AddMovie() {
                         <div className="row">
                             <button className="button" onClick={ ()=>dispatch( {type: 'ADD_MOVIE', payload: newMovie } )}>Add movie!</button>
                             <Link to='/'><button className="button">Cancel</button></Link>
+                            <Link to='/'><button className="button">Back</button></Link>
                         </div>
                     </form>
                 </div>

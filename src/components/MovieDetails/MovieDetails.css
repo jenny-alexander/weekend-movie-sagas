@@ -1,7 +1,3 @@
-/* .movies {
-    display : flex;
-    flex-wrap: wrap;
-} */
 ul {
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
@@ -24,9 +20,17 @@ img {
   padding: 25px 50px;
   border: 1px black solid;
   text-align: justify;
+  background-color: #eaeef7;
+  border-radius: 4px;
 }
-#back-btn {
-  font-size: 20px;
-  padding: 5px 10px;
+#btn-back {
+  font-size: 17px;
+  padding: 10px;
   margin: 10px;
+  background-color: #d3d6dc;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+  width: 130px;
 }

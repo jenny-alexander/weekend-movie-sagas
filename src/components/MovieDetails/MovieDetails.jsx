@@ -20,7 +20,7 @@ function MovieDetails(props) {
             </section>
             <br></br>
             <Link to='/'>
-                <button id="back-btn">Back to Movie List</button>
+                <button id="btn-back">Back to List</button>
             </Link>
         </main>
 
