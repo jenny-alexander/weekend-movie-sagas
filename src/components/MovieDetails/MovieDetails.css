@@ -7,13 +7,17 @@ ul {
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
 }
-#title {
-  font-weight: bold;
-  font-size: 24px;
-  padding-bottom: 20px;
+
+#movie-title {
+  padding-top: 20px;
+  font-size: 26px;
 }
-#image {
-  padding-bottom: 20px;
+
+img {
+  margin-top: 15px;
+  border: black solid 2px;
+  max-width: 400px;
+  max-height: 300px;
 }
 #desc {
   margin: 20px;

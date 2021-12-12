@@ -13,7 +13,7 @@ function MovieDetails(props) {
         <main>
             <section className="movie-details">
                 <ul>
-                    <li id="title">{movieDetails.title}</li>
+                    <li id="movie-title">{movieDetails.title}</li>
                     <img id="image" src={movieDetails.poster} alt={movieDetails.title}></img>
                     <li id="desc">{movieDetails.description}</li>
                 </ul>
